@@ -24,7 +24,7 @@ func CreateBank() Bank {
 	return bank
 }
 
-func (b *Bank) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+func (b *Bank) ServeHTTP(w http.ResponseWriter, r *http.Request) { 
 	switch r.Method {
 	case http.MethodGet:
 		vars := mux.Vars(r)
